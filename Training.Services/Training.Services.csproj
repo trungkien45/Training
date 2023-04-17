@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Training.Common\Training.Common.csproj" />
+    <ProjectReference Include="..\Training.Contracts\Training.Contracts.csproj" />
+    <ProjectReference Include="..\Training.Entities\Training.Entities.csproj" />
+    <ProjectReference Include="..\Training.Repostitories\Training.Repostitories.csproj" />
+  </ItemGroup>
+
+</Project>
