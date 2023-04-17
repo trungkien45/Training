@@ -73,7 +73,7 @@ builder.Services.AddSwaggerGen(opt =>
         }
     });
 });
-builder.Services.AddDbContext<TrainingDbContext>(options => { var connectionString = builder.Configuration.GetConnectionString("ATDatabase"); options.UseSqlite(connectionString); });
+builder.Services.AddDbContext<TrainingDbContext>(options => { var connectionString = builder.Configuration.GetConnectionString("TrainingDatabase"); options.UseSqlite(connectionString); });
 builder.Services.AddTransient<IAccountService, AccountService>();
 builder.Services.AddTransient<IAccountRepository, AccountRepository>();
 builder.Services.AddTransient<IStatisticalService, StatisticalService>();
