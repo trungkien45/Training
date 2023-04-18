@@ -27,7 +27,7 @@ namespace Training.API
             {
                 context.Result = new ObjectResult(httpResponseException.Value)
                 {
-                    StatusCode = httpResponseException.StTrainingusCode
+                    StatusCode = httpResponseException.StatusCode
                 };
 
                 context.ExceptionHandled = true;

@@ -2,10 +2,10 @@
 {
     public class HttpResponseException : Exception
     {
-        public HttpResponseException(int stTrainingusCode, object? value = null) =>
-            (StTrainingusCode, Value) = (stTrainingusCode, value);
+        public HttpResponseException(int statusCode, object? value = null) =>
+            (StatusCode, Value) = (statusCode, value);
 
-        public int StTrainingusCode { get; }
+        public int StatusCode { get; }
 
         public object? Value { get; }
     }

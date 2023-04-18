@@ -10,9 +10,9 @@ namespace Training.Entities
         public DbSet<Account> Accounts { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Grade> Grades { get; set; }
-        public TrainingDbContext(IConfiguration configurTrainingion, DbContextOptions options) : base(options)
+        public TrainingDbContext(IConfiguration configuration, DbContextOptions options) : base(options)
         {
-            Configuration = configurTrainingion;
+            Configuration = configuration;
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
